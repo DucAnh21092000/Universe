@@ -1,0 +1,118 @@
+ html,
+ body {
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     background: #000;
+     overflow: hidden;
+ }
+
+ canvas {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     z-index: 99;
+     transform: translate(-50%, -50%);
+
+ }
+
+ .animation {
+     animation: scale 2s infinite;
+ }
+
+ @keyframes scale {
+     from {
+         transform: scale(0.8);
+     }
+
+     to {
+         transform: scale(1.2);
+     }
+
+ }
+
+ .animation2 {
+     animation: scale2 2s infinite;
+ }
+
+ @keyframes scale2 {
+     from {
+         transform: scale(1.2);
+     }
+
+     to {
+         transform: scale(0.8);
+     }
+ }
+
+ @keyframes scaleText {
+     from {
+         font-size: 20px;
+         background: linear-gradient(to right, #f4de64 0%, red 100%);
+         background-clip: text;
+         color: transparent;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-box-decoration-break: clone;
+         -webkit-text-fill-color: transparent;
+         background: -webkit-linear-gradient(to right, red 0%, #f4de64 100%);
+     }
+
+     to {
+         font-size: 40px;
+         background: linear-gradient(to right, red 0%, #f4de64 100%);
+         background-clip: text;
+         color: transparent;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-box-decoration-break: clone;
+         -webkit-text-fill-color: transparent;
+         background: -webkit-linear-gradient(to right, red 0%, #ef6eae 100%);
+     }
+ }
+
+ @keyframes scaleText2 {
+     from {
+         font-size: 40px;
+         background: linear-gradient(to right, red 0%, #f4de64 100%);
+         background-clip: text;
+         color: transparent;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-box-decoration-break: clone;
+         -webkit-text-fill-color: transparent;
+         background: -webkit-linear-gradient(to right, red 0%, #f4de64 100%);
+     }
+
+     to {
+         font-size: 20px;
+         background: linear-gradient(to right, #f4de64 0%, red 100%);
+         background-clip: text;
+         color: transparent;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-box-decoration-break: clone;
+         -webkit-text-fill-color: transparent;
+         background: -webkit-linear-gradient(to right, red 0%, #f4de64 100%);
+     }
+ }
+
+ .animation3 {
+     animation: scaleText 2s infinite;
+ }
+
+ .animation4 {
+     animation: scaleText2 2s infinite;
+
+ }

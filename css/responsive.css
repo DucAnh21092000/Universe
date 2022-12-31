@@ -1,0 +1,68 @@
+@media only screen and (min-width: 300px) and (max-width :600px) {
+    @keyframes scale {
+        from {
+            transform: scale(0.1) !important;
+        }
+
+        to {
+            transform: scale(0.2) !important;
+        }
+
+    }
+
+    @keyframes scale1 {
+        from {
+            transform: scale(0.2) !important;
+        }
+
+        to {
+            transform: scale(0.1) !important;
+        }
+
+    }
+
+    @keyframes scaleText {
+        from {
+            font-size: 15px;
+            background: linear-gradient(to right, yellow 0%, red 100%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-background-clip: text;
+        }
+
+        to {
+            font-size: 20px;
+            background: linear-gradient(to right, red 0%, yellow 100%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-background-clip: text;
+        }
+    }
+
+    @keyframes scaleText2 {
+        from {
+            font-size: 20px;
+            background: linear-gradient(to right, red 0%, yellow 100%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-background-clip: text;
+        }
+
+        to {
+            font-size: 15px;
+            background: linear-gradient(to right, yellow 0%, red 100%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-background-clip: text;
+        }
+    }
+
+}
